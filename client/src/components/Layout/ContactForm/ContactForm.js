@@ -14,19 +14,19 @@ const ContactForm = () => {
                     </div>
 
                     <div className="form__group">
-                        <input type="text" className="form__input" placeholder="Full name" id="name" required />
-                        <label for="name" className="form__label">Nombre</label>
+                        <input type="text" className="form__input" placeholder="Tu nombre" id="name" required />
+                        <label className="form__label">Nombre</label>
                     </div>
 
                     <div className="form__group">
-                        <input type="email" className="form__input" placeholder="Email address" id="email" required />
-                        <label for="email" className="form__label">Email</label>
+                        <input type="email" className="form__input" placeholder="Tu email" id="email" required />
+                        <label className="form__label">Email</label>
                     </div>
 
                     <div className="form__group u-margin-bottom-medium">
                         <div className="form__radio-group">
                             <input type="radio" className="form__radio-input" id="small" name="size" />
-                            <label for="small" className="form__radio-label">
+                            <label className="form__radio-label">
                                 <span className="form__radio-button"></span>
                                 Solo yo
                             </label>
@@ -34,7 +34,7 @@ const ContactForm = () => {
 
                         <div className="form__radio-group">
                             <input type="radio" className="form__radio-input" id="large" name="size" />
-                            <label for="large" className="form__radio-label">
+                            <label className="form__radio-label">
                                 <span className="form__radio-button"></span>
                                 En grupo
                             </label>

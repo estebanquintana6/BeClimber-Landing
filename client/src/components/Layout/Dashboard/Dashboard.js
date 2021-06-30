@@ -2,20 +2,20 @@ import React from 'react';
 
 import {
     AboutElement,
-    AboutSection,
     AboutElementTitle,
     HeaderCenteredBox,
     MainHeader,
+    MoreInfoSection,
     Logo,
     SectionRow
 } from './Dashboard.styles';
 
+import About from '../About/About'
 import ContactForm from '../ContactForm/ContactForm'
 import Footer from '../Footer/Footer'
 
 
 const Dashboard = () => {
-    console.log("PUBLIC URL", process.env.PUBLIC_URL)
     return (
         <>
             <MainHeader src={'/static/img/background.jpg'}>
@@ -23,14 +23,17 @@ const Dashboard = () => {
                     <Logo src={'/static/img/logo.png'}></Logo>
                 </HeaderCenteredBox>
             </MainHeader>
-            <AboutSection>
+            <About>
+
+            </About>
+            <MoreInfoSection>
                 <AboutElement src={'/static/img/nat-1-large.jpg'}>
                     <AboutElementTitle>¿Quiénes somos?</AboutElementTitle>
                 </AboutElement>
                 <AboutElement src={'/static/img/nat-2-large.jpg'}>
                     <AboutElementTitle>Nuestros servicios</AboutElementTitle>
                 </AboutElement>
-            </AboutSection>
+            </MoreInfoSection>
             <ContactForm />
             <Footer />
         </>

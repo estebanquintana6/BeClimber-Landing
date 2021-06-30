@@ -2,7 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: ['@babel/polyfill/noConflict', './src/index.js'],
   module: {
     rules: [{
         test: /\.(js|jsx)$/,

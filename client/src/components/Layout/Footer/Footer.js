@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="footer__logo-box">
 
                     <picture className="footer__logo">
-                        <img srcset="/static/img/logo.png 1x"
+                        <img srcSet="/static/img/logo.png 1x"
                             alt="Full logo"
                             width="200px"
                             src="/static/img/logo.png"

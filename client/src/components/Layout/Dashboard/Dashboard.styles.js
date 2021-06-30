@@ -94,7 +94,7 @@ export const AboutElement = styled.div`
     }
 `
 
-export const AboutSection = styled.section`
+export const MoreInfoSection = styled.section`
     display: flex;
     padding: 50px;
     @media (max-width: 1024px) {
