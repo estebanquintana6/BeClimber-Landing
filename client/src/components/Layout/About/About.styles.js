@@ -73,7 +73,7 @@ export const AboutList = styled.ul`
 `
 
 export const AboutListElement = styled.li`
-    font-size: 8.5pt;
+    font-size: 9.5pt;
     margin: 15px 0;
     font-weight: bold;
 `
