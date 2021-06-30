@@ -10,6 +10,10 @@ import {
     SectionRow
 } from './Dashboard.styles';
 
+import { Row } from 'react-bootstrap'
+
+import Footer from '../Footer/Footer'
+
 
 const Dashboard = () => {
     console.log("PUBLIC URL", process.env.PUBLIC_URL)
@@ -28,6 +32,7 @@ const Dashboard = () => {
                     <AboutElementTitle>Nuestros servicios</AboutElementTitle>
                 </AboutElement>
             </AboutSection>
+            <Footer />
         </>
     );
 };

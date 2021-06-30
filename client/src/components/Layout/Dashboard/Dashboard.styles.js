@@ -99,6 +99,7 @@ export const AboutSection = styled.section`
     padding: 50px;
     @media (max-width: 1024px) {
         flex-direction: column;
+        padding: 20px;
     }
 `
 
