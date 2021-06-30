@@ -3,15 +3,16 @@ import React from 'react';
 import {
     CopyRightText,
     CopyRightWrapper,
+    FooterWrapper,
     FooterRow
 } from './Footer.styles'
 
-
+import { Row } from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <>
-            <footer className="footer">
+        <FooterRow>
+            <FooterWrapper className="footer">
                 <div className="footer__logo-box">
 
                     <picture className="footer__logo">
@@ -31,8 +32,8 @@ const Footer = () => {
                         </CopyRightText>
                     </CopyRightWrapper>
                 </FooterRow>
-            </footer>
-        </>
+            </FooterWrapper>
+        </ FooterRow>
     );
 };
 

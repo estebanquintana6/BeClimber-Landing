@@ -10,8 +10,7 @@ import {
     SectionRow
 } from './Dashboard.styles';
 
-import { Row } from 'react-bootstrap'
-
+import ContactForm from '../ContactForm/ContactForm'
 import Footer from '../Footer/Footer'
 
 
@@ -32,9 +31,10 @@ const Dashboard = () => {
                     <AboutElementTitle>Nuestros servicios</AboutElementTitle>
                 </AboutElement>
             </AboutSection>
+            <ContactForm />
             <Footer />
         </>
     );
 };
 
-export default Dashboard;
+export default Dashboard

@@ -15,3 +15,7 @@ export const CopyRightWrapper = styled.div`
 export const CopyRightText = styled.p`
     text-align: center;
 `
+
+export const FooterWrapper = styled.footer`
+    width: 100%;
+`
