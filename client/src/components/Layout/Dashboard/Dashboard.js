@@ -1,18 +1,34 @@
 import React from 'react';
 
-import { Button, Container } from 'react-bootstrap';
+import {
+    AboutElement,
+    AboutSection,
+    AboutElementTitle,
+    HeaderCenteredBox,
+    MainHeader,
+    Logo,
+    SectionRow
+} from './Dashboard.styles';
 
 
 const Dashboard = () => {
+    console.log("PUBLIC URL", process.env.PUBLIC_URL)
     return (
-        <Container>
-            <div className="text-center mt-5">
-                <h1 className="primary-dark">Tienes una sesión activa</h1>
-            </div>
-            <div className="mx-5 mt-3">
-            </div>
-        </Container>
-
+        <>
+            <MainHeader src={'/static/img/background.jpg'}>
+                <HeaderCenteredBox>
+                    <Logo src={'/static/img/logo.png'}></Logo>
+                </HeaderCenteredBox>
+            </MainHeader>
+            <AboutSection>
+                <AboutElement src={'/static/img/nat-1-large.jpg'}>
+                    <AboutElementTitle>¿Quiénes somos?</AboutElementTitle>
+                </AboutElement>
+                <AboutElement src={'/static/img/nat-2-large.jpg'}>
+                    <AboutElementTitle>Nuestros servicios</AboutElementTitle>
+                </AboutElement>
+            </AboutSection>
+        </>
     );
 };
 

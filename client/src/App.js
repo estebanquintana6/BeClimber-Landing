@@ -45,7 +45,7 @@ const App = () => {
         <Switch>
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          <PrivateRoute exact path="/" component={DashboardLayout}/>
+          <Route exact path="/" component={DashboardLayout}/>
         </Switch>
       </Router>
     </Provider>
