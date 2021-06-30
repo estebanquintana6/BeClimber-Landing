@@ -45,6 +45,7 @@ export const AboutImageWrapper = styled.div`
 
 export const AboutImage = styled.img`
     width: 100%;
+    border-radius: 25px;
 `
 
 export const AboutTitleWrapper = styled.div`
