@@ -47,7 +47,10 @@ export const HeaderCenteredBox = styled.div`
 `
 
 export const Logo = styled.img`
-    width: 65vh;
+    width: 360px;
+    @media (min-width: 1024px) {
+        width: 65vh;
+    }
     animation: ${moveInBottom} .5s ease-out 2s;
     animation-fill-mode: backwards;
     transition: all 1s;
