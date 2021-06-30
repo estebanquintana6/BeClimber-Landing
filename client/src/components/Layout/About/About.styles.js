@@ -15,7 +15,10 @@ export const IntroAbout = styled.div`
 
 export const IntroTitleWrapper = styled(Col)`
     text-align: center;
-    padding: 0 100px;
+    padding: 0 20px;
+    @media (min-width: 1024px) {
+        padding: 0 100px;
+    }
     position: absolute;
     top: 45%;
 `
