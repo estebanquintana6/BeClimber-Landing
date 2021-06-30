@@ -69,10 +69,11 @@ export const AboutIntroText = styled.p`
 
 export const AboutList = styled.ul`
     margin-top: 30px;
+    list-style-type: none;
 `
 
 export const AboutListElement = styled.li`
     font-size: 8.5pt;
-    margin: 10px 0;
+    margin: 15px 0;
     font-weight: bold;
 `
