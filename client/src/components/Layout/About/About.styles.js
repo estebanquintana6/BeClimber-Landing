@@ -2,8 +2,9 @@ import styled, { keyframes } from 'styled-components'
 
 import { Col, Row } from 'react-bootstrap'
 
-export const Wrapper = styled.div`
-    padding: 30px;
+export const AboutWrapper = styled.div`
+    padding: 30px 15px 15px 30px;
+    margin: 50px 0;
     display: flex;
     @media (max-width: 1024px) {
         flex-direction: column;
@@ -77,4 +78,20 @@ export const AboutListElement = styled.li`
     font-size: 9.5pt;
     margin: 15px 0;
     font-weight: bold;
+`
+
+export const ServiceWrapper = styled.div`
+    width: 100%;
+    padding: 30px 15px 15px 30px;
+    display: flex;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+`
+
+export const ServiceText = styled.p`
+    font-weight: initial;
+    @media (max-width: 1024px) {
+        margin-top: 16px;
+    }
 `

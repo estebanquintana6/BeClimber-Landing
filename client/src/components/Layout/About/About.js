@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { Row } from 'react-bootstrap'
 import { InView } from 'react-intersection-observer';
 
 import {
@@ -15,7 +14,9 @@ import {
     AboutListElement,
     AboutTitle,
     AboutTitleWrapper,
-    Wrapper
+    AboutWrapper,
+    ServiceWrapper,
+    ServiceText
 } from './About.styles'
 
 import './About.css'
@@ -35,7 +36,7 @@ const About = () => {
                     </IntroAbout>
                 }
             </InView>
-            <Wrapper>
+            <AboutWrapper>
                 <AboutImageWrapper>
                     <InView>
                         {({ inView, ref }) =>
@@ -47,11 +48,11 @@ const About = () => {
                 </AboutImageWrapper>
                 <AboutImageWrapper>
                     <AboutTitleWrapper>
-                        <AboutTitle>Escala con nosotros.</AboutTitle>
+                        <AboutTitle>¿Quiénes somos?</AboutTitle>
                     </AboutTitleWrapper>
                     <AboutDescription>
                         <AboutIntroText>
-                            Somos B Climber, una escuela de escalada en la ciudad de Querétaro enfocada en generar conocimiento por medio de educación experiencial y nuestro objetivo es:
+                            Somos una escuela de escalada en la ciudad de Querétaro enfocada en generar conocimiento por medio de educación experiencial y nuestro objetivo es:
                         </AboutIntroText>
                         <AboutList>
                             <AboutListElement>
@@ -63,13 +64,49 @@ const About = () => {
                             <AboutListElement>
                                 Esparcir la ética al aire libre y técnicas de mínimo impacto para un crecimiento sano del deporte generando la menor huella posible y preservando las zonas de escalada
                             </AboutListElement>
+                        </AboutList>
+                    </AboutDescription>
+                </AboutImageWrapper>
+            </AboutWrapper>
+
+            <ServiceWrapper>
+                <AboutImageWrapper>
+                    <AboutTitleWrapper>
+                        <AboutTitle>Nuestros cursos</AboutTitle>
+                    </AboutTitleWrapper>
+                    <AboutDescription>
+                        <AboutList>
                             <AboutListElement>
-                                Crear una comunidad consciente y que actúa bajo las mejores prácticas en el deporte y las áreas naturales
+                                Curso de Introducción a la Escalada Deportiva:
+                                <ServiceText>
+                                    Aprende todas las bases de la escalada deportiva en roca;
+                                    desde conocimiento del equipo, identificación y prevención de riesgos,
+                                    hasta planeación de salidas a escalar,
+                                    al concluir el curso serás capaz de escalar con las mejores prácticas 
+                                    de manera autónoma con tu cordada
+                                </ServiceText>
+                            </AboutListElement>
+                            <AboutListElement>
+                                Taller de multilargos:
+                                <ServiceText>
+                                    Aprenderás cómo evitar los riesgos más comunes
+                                    y resolver problemas que se puedan presentar,
+                                    además profundizaremos en reuniones, maniobras, nudos y medios de fortuna)
+                                </ServiceText>
                             </AboutListElement>
                         </AboutList>
                     </AboutDescription>
                 </AboutImageWrapper>
-            </Wrapper>
+                <AboutImageWrapper>
+                    <InView>
+                        {({ inView, ref }) =>
+                            <AboutImage src='/static/img/services.jpeg'
+                                className={`${inView ? 'move-in' : ''}`}
+                                ref={ref} />
+                        }
+                    </InView>
+                </AboutImageWrapper>
+            </ServiceWrapper>
         </>
     )
 }
