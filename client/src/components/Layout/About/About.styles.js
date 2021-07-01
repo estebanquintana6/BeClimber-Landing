@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 
 export const AboutWrapper = styled.div`
-    padding: 30px 15px 15px 30px;
+    padding: 30px 15px 30px 15px;
     margin: 50px 0;
     display: flex;
     @media (max-width: 1024px) {
@@ -75,14 +75,14 @@ export const AboutList = styled.ul`
 `
 
 export const AboutListElement = styled.li`
-    font-size: 9.5pt;
+    font-size: 10.5pt;
     margin: 15px 0;
     font-weight: bold;
 `
 
 export const ServiceWrapper = styled.div`
     width: 100%;
-    padding: 30px 15px 15px 30px;
+    padding: 30px 15px 30px 15px;
     display: flex;
     @media (max-width: 1024px) {
         flex-direction: column;
