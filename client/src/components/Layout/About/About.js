@@ -76,7 +76,7 @@ const About = () => {
                     </AboutTitleWrapper>
                     <AboutDescription>
                         <AboutList>
-                            <AboutListElement>
+                            <AboutListElement services>
                                 Curso de Introducción a la Escalada Deportiva:
                                 <ServiceText>
                                     Aprende todas las bases de la escalada deportiva en roca;
@@ -86,7 +86,7 @@ const About = () => {
                                     de manera autónoma con tu cordada
                                 </ServiceText>
                             </AboutListElement>
-                            <AboutListElement>
+                            <AboutListElement services>
                                 Taller de multilargos:
                                 <ServiceText>
                                     Aprenderás cómo evitar los riesgos más comunes

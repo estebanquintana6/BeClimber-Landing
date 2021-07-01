@@ -76,7 +76,7 @@ export const AboutList = styled.ul`
 
 export const AboutListElement = styled.li`
     font-size: 10.5pt;
-    margin: 15px 0;
+    margin: ${props => { return props.services ? '30px 0' : '15px 0' }};
     font-weight: bold;
 `
 
