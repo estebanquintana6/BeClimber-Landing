@@ -985,53 +985,54 @@ body {
 }
 
 .section-book {
-	padding: 15rem 0;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
-	background-image: linear-gradient(to right bottom, #7ed56f, #28b485)
+    padding: 15rem 0;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485)
 }
 
 @media only screen and (max-width: 56.25em) {
-	.section-book {
-		padding: 10rem 0
-	}
+    .section-book {
+        padding: 10rem 0
+    }
 }
 
 .book {
-	background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 50%), url(../img/nat-10.jpg);
-	background-size: 100%;
+    background-image: linear-gradient(280deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 50%), url(../img/contact.png);
+    background-position-y: -300px;
     padding: 50px;
-	-webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2)
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2)
 }
 
 @media only screen and (max-width: 75em) {
-	.book {
-		background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 65%, transparent 65%), url(../img/nat-10.jpg);
-		background-size: cover;
-	}
+    .book {
+        background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 65%, transparent 65%), url(../img/nat-10.jpg);
+        background-size: cover;
+    }
 }
 
 @media only screen and (max-width: 56.25em) {
-	.book {
-		background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), url(../img/nat-10.jpg);
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/nat-10.jpg);
+    .book {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), url(../img/nat-10.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/nat-10.jpg);
         padding: 0;
     }
 }
 
 .book__form {
-	width: 50%;
-	padding: 6rem
+    width: 50%;
+    margin-left: auto;
+    padding: 6rem;
 }
 
 @media only screen and (max-width: 75em) {
-	.book__form {
-		width: 65%
-	}
+    .book__form {
+        width: 65%
+    }
 }
 
 @media only screen and (max-width: 56.25em) {
-	.book__form {
-		width: 100%
-	}
+    .book__form {
+        width: 100%
+    }
 }
