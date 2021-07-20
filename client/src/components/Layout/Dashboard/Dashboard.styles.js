@@ -13,9 +13,32 @@ const moveInBottom = keyframes`
     }
 `
 
+const blackBackgroundAnimation = keyframes`
+0% { 
+    background: rgba(0, 0, 0, 1);
+}
+100% {
+    background: rgba(0, 0, 0, 0);
+}
+`
+
+const moveUp = keyframes`
+    0% { 
+        opacity:1;
+        transform: scale(1) translateY(300px);
+    }
+    100% {
+        opacity:1;
+        transform: scale(0.25) translateY(0px);
+    }
+`
+
 export const MainHeader = styled.div`
     height: 100vh;
     background-image: url(${props => props.src});
+    @media (max-width: 1024px) {
+        background-position-x: -250px;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -26,7 +49,7 @@ export const MainHeader = styled.div`
       color: palevioletred;
     }
     &:before {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.5);
         content: "";
         height: 100%;
         left: 0;
@@ -39,7 +62,14 @@ export const MainHeader = styled.div`
 
 export const HeaderCenteredBox = styled.div`
     position: absolute;
+    height: 120vh;
+    width: 100%;
+    animation: ${blackBackgroundAnimation} 6s ease-out 4s;
+    animation-fill-mode: backwards;
     top: 45%;
+    @media (min-width: 1024px) {
+        top: 40%;
+    }
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -51,7 +81,8 @@ export const Logo = styled.img`
     @media (min-width: 1024px) {
         width: 65vh;
     }
-    animation: ${moveInBottom} .5s ease-out 2s;
+    transform: scale(0.25);
+    animation: ${moveUp} 3s ease-out 2s;
     animation-fill-mode: backwards;
     transition: all 1s;
     display: inline-block;
