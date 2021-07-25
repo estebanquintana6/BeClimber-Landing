@@ -23,7 +23,7 @@ const Dashboard = () => {
     const history = useHistory()
 
     const toGallery = () => {
-        history.push("/gallery#header");
+        history.push("/gallery");
       }
 
     return (
