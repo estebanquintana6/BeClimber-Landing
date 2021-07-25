@@ -5,6 +5,7 @@ import {
     AboutElementTitle,
     HeaderCenteredBox,
     MainHeader,
+    MoreServicesSection,
     MoreInfoSection,
     Logo
 } from './Dashboard.styles';
@@ -15,9 +16,15 @@ import Footer from '../Footer/Footer'
 import LargeImageSection from '../LargeImageSection/LargeImageSection'
 
 import { useIsMobile } from '../../../utils/breakpointUtils'
+import { useHistory } from "react-router-dom"
 
 const Dashboard = () => {
     const isMobile = useIsMobile()
+    const history = useHistory()
+
+    const toGallery = () => {
+        history.push("/gallery#header");
+      }
 
     return (
         <>
@@ -30,13 +37,17 @@ const Dashboard = () => {
             <LargeImageSection src={isMobile ?
                 '/static/img/about-2.jpeg' :
                 '/static/img/large-image.jpeg'} />
-             <MoreInfoSection>
-                <AboutElement src={'/static/img/nat-1-large.jpg'}>
-                    <AboutElementTitle>Galería</AboutElementTitle>
-                </AboutElement>
-                <AboutElement src={'/static/img/nat-2-large.jpg'}>
-                    <AboutElementTitle>Más servicios</AboutElementTitle>
-                </AboutElement>
+            <MoreInfoSection>
+                <MoreServicesSection>
+                    <AboutElement 
+                    left src={'/static/img/img8.jpeg'}
+                    onClick={toGallery}>
+                        <AboutElementTitle>Galería</AboutElementTitle>
+                    </AboutElement>
+                    <AboutElement right src={'/static/img/us.jpeg'}>
+                        <AboutElementTitle>Más servicios</AboutElementTitle>
+                    </AboutElement>
+                </MoreServicesSection>
             </MoreInfoSection>
             <ContactForm />
             <Footer />

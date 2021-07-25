@@ -64,7 +64,7 @@ export const HeaderCenteredBox = styled.div`
     position: absolute;
     height: 120vh;
     width: 100%;
-    animation: ${blackBackgroundAnimation} 6s ease-out 4s;
+    animation: ${blackBackgroundAnimation} 6s ease-out 3s;
     animation-fill-mode: backwards;
     top: 45%;
     @media (min-width: 1024px) {
@@ -100,8 +100,19 @@ export const Logo = styled.img`
     }
 `
 
+export const MoreServicesSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+    position: relative;
+    width: 100%;
+`
+
 export const AboutElement = styled.div`
     width: 100%;
+    flex-direction: column;
     margin: 24px 0px;
     @media (min-width: 1024px) {
         width: 50%;

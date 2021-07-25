@@ -3,7 +3,10 @@ import styled, { keyframes } from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 
 export const AboutWrapper = styled.div`
-    padding: 30px 15px 15px 15px;
+    padding: 30px 30px 15px 30px;
+    @media (min-width: 1024px) {
+        padding: 30px 100px 15px;
+    }
     margin: 50px 0;
     display: flex;
     @media (max-width: 1024px) {
