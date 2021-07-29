@@ -19,6 +19,7 @@
     "babel-plugin-transform-inline-environment-variables": "0.4.3",
     "classnames": "2.2.6",
     "dotenv": "8.2.0",
+    "emailjs-com": "^3.2.0",
     "file-loader": "6.2.0",
     "install": "0.13.0",
     "is-empty": "1.2.0",

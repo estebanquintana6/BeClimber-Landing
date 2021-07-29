@@ -85,9 +85,10 @@ export const AboutListElement = styled.li`
 
 export const ServiceWrapper = styled.div`
     width: 100%;
-    padding: 30px 15px 30px 15px;
+    padding: 30px 100px 15px;
     display: flex;
     @media (max-width: 1024px) {
+        padding: 30px 15px 30px 15px;
         flex-direction: column;
     }
 `
@@ -97,4 +98,8 @@ export const ServiceText = styled.p`
     @media (max-width: 1024px) {
         margin-top: 16px;
     }
+`
+
+export const SecondaryTitle = styled.span`
+    font-size: 15px;
 `

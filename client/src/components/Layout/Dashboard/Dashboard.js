@@ -24,7 +24,7 @@ const Dashboard = () => {
 
     const toGallery = () => {
         history.push("/gallery");
-      }
+    }
 
     return (
         <>
@@ -39,13 +39,12 @@ const Dashboard = () => {
                 '/static/img/large-image.jpeg'} />
             <MoreInfoSection>
                 <MoreServicesSection>
-                    <AboutElement 
-                    left src={'/static/img/img8.jpeg'}
-                    onClick={toGallery}>
-                        <AboutElementTitle>Galería</AboutElementTitle>
-                    </AboutElement>
-                    <AboutElement right src={'/static/img/us.jpeg'}>
-                        <AboutElementTitle>Más servicios</AboutElementTitle>
+                    <AboutElement
+                        left src={'/static/img/img1.jpg'}
+                        onClick={toGallery}>
+                        <AboutElementTitle>
+                            <p>¡Echa un vistazo a<br /> nuestra galería!</p>
+                        </AboutElementTitle>
                     </AboutElement>
                 </MoreServicesSection>
             </MoreInfoSection>

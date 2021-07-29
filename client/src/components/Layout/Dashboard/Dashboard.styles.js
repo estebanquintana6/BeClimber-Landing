@@ -25,7 +25,7 @@ const blackBackgroundAnimation = keyframes`
 const moveUp = keyframes`
     0% { 
         opacity:1;
-        transform: scale(1) translateY(300px);
+        transform: scale(1) translateY(250px);
     }
     100% {
         opacity:1;
@@ -105,6 +105,8 @@ export const MoreServicesSection = styled.div`
     flex-direction: column;
     @media (min-width: 1024px) {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     position: relative;
     width: 100%;
@@ -114,13 +116,18 @@ export const AboutElement = styled.div`
     width: 100%;
     flex-direction: column;
     margin: 24px 0px;
+    border-radius: 30px;
     @media (min-width: 1024px) {
-        width: 50%;
+        width: 100%;
         margin: 0 24px;
     }
     height: 70vh;
     cursor: pointer;
     background-image: url(${props => props.src});
+    background-size: cover;
+    @media (max-width: 1024px) {
+        background-position-x: -300px;
+    }
     position: relative;
     z-index: 0;
     &:hover,
@@ -129,6 +136,7 @@ export const AboutElement = styled.div`
     }
     &:before {
         background: rgba(0, 0, 0, 0.6);
+        border-radius: 30px;
         content: "";
         height: 100%;
         left: 0;
@@ -152,9 +160,9 @@ export const AboutElementTitle = styled.span`
     color: white;
     z-index: 2;
     position: relative;
-    top: 45%;
+    top: 35%;
     left: 10%;
-    font-size: 30px;
+    font-size: 37px;
     @media (min-width: 1024px) {
         font-size: 44px;
     }

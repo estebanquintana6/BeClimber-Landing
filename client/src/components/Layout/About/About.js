@@ -15,6 +15,7 @@ import {
     AboutTitle,
     AboutTitleWrapper,
     AboutWrapper,
+    SecondaryTitle,
     ServiceWrapper,
     ServiceText
 } from './About.styles'
@@ -52,17 +53,19 @@ const About = () => {
                     </AboutTitleWrapper>
                     <AboutDescription>
                         <AboutIntroText>
-                            Somos una escuela de escalada en la ciudad de Querétaro enfocada en generar conocimiento por medio de educación experiencial y nuestro objetivo es:
+                            Somos una escuela de escalada en la ciudad de Querétaro enfocada en crear
+                            conocimiento por medio de educación experiencial y nuestro objetivo es
+                            construir una comunidad consciente de escaladores:
                         </AboutIntroText>
                         <AboutList>
                             <AboutListElement>
-                                Ayudar a la gente a acercarse a la escalada en roca de manera integral, segura y divertida.
+                                Ayudando a la gente a acercarse a la escalada en roca de manera integral, segura y divertida.
                             </AboutListElement>
                             <AboutListElement>
-                                Ayudar al avance de escaladores principiantes e intermedios en maniobras, técnica y control mental.
+                                Ayudando al avance de escaladores principiantes e intermedios en maniobras, técnica y control mental.
                             </AboutListElement>
                             <AboutListElement>
-                                Esparcir la ética al aire libre y técnicas de mínimo impacto para un crecimiento sano del deporte generando la menor huella posible y preservando las zonas de escalada
+                                Esparciendo la ética al aire libre y técnicas de mínimo impacto para un crecimiento sano del deporte generando la menor huella posible y preservando las zonas de escalada
                             </AboutListElement>
                         </AboutList>
                     </AboutDescription>
@@ -77,19 +80,19 @@ const About = () => {
                     <AboutDescription>
                         <AboutList>
                             <AboutListElement services>
-                                Curso de Introducción a la Escalada Deportiva:
+                                <SecondaryTitle>Curso de Introducción a la Escalada Deportiva:</SecondaryTitle>
                                 <ServiceText>
                                     Aprende todas las bases de la escalada deportiva en roca;
                                     desde conocimiento del equipo, identificación y prevención de riesgos,
                                     hasta planeación de salidas a escalar,
-                                    al concluir el curso serás capaz de escalar con las mejores prácticas 
-                                    de manera autónoma con tu cordada
+                                    al concluir el curso serás capaz de escalar con las mejores prácticas
+                                    deportivas de manera autónoma con tu cordada
                                 </ServiceText>
                             </AboutListElement>
                             <AboutListElement services>
-                                Taller de multilargos:
+                                <SecondaryTitle>Taller de multilargos:</SecondaryTitle>
                                 <ServiceText>
-                                    Aprenderás cómo evitar los riesgos más comunes
+                                    Aprenderás cómo evitar los riesgos y errores más comunes
                                     y resolver problemas que se puedan presentar,
                                     además profundizaremos en reuniones, maniobras, nudos y medios de fortuna)
                                 </ServiceText>
