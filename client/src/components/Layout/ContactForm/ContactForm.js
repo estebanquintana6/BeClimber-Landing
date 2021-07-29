@@ -21,7 +21,8 @@ const ContactForm = () => {
             .then((result) => {
                 swal({
                     icon: "success",
-                    content: <h2>Se ha mandado el correo</h2>,
+                    content: <h2>Gracias por ponerte en contacto con nosotros. <br />
+                        Pronto nos comunicaremos contigo</h2>,
                 })
             }, (error) => {
                 swal({
