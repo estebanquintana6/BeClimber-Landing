@@ -115,11 +115,9 @@ export const MoreServicesSection = styled.div`
 export const AboutElement = styled.div`
     width: 100%;
     flex-direction: column;
-    margin: 24px 0px;
     border-radius: 30px;
     @media (min-width: 1024px) {
         width: 100%;
-        margin: 0 24px;
     }
     height: 70vh;
     cursor: pointer;
@@ -163,6 +161,7 @@ export const AboutElementTitle = styled.span`
     top: 35%;
     left: 10%;
     font-size: 37px;
+    display: inline-block;
     @media (min-width: 1024px) {
         font-size: 44px;
     }
